@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+<title>
+Footer Frame
+</title>
+</head>
+<body>
+<center>
+<font size="7"><font color="#585858">
+
+<!--
+
+To reset the LTA counter for GSENA or WC/NW change the below dates to the last LTA
+
+/-->
+
+<script type="text/javascript">
+
+<!--GSENA/-->
+var pastDateGS = new Date("September 3, 2016 0:00:00")
+<!--WC/NW/-->
+var pastDateWN = new Date("May 18, 2007 0:00:00")
+
+
+var pastEpochGS = pastDateGS.getTime();
+var pastEpochGS = pastEpochGS/1000.0
+var pastEpochWN = pastDateWN.getTime()
+var pastEpochWN = pastEpochWN /1000
+var currDate = new Date()
+var currEpoch = currDate.getTime()/1000.0;
+var diffEpochGS = Math.floor((currEpoch-pastEpochGS)/86400)
+var diffEpochWN = Math.floor((currEpoch-pastEpochWN)/86400)
+document.write("GSENA Days Since Last LTA " + diffEpochGS)
+document.write("<br>")
+document.write("West Cape/Norway Days Since Last LTA " + diffEpochWN)
+document.write("<br>")
+</script>
+</font></font>
+<img src="https://dl.dropboxusercontent.com/u/87865191/Digital%20Signage/GDF_SUEZ_Logo_Color%20small.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://dl.dropboxusercontent.com/u/87865191/Digital%20Signage/logo%20vestas%20small.png"
+</center>
+</body>
+</html>
